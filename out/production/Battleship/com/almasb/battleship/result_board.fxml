@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almasb.battleship.ResultBoard">
+<children>
+    <Label fx:id="game_result" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="14.0" prefHeight="85.0" prefWidth="288.0" text="You Win">
+        <font>
+            <Font name="System Bold" size="40.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="127.0" prefHeight="35.0" prefWidth="97.0" text="History">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <ListView fx:id="myListView" focusTraversable="false" layoutX="100.0" layoutY="162.0" prefHeight="540.0" prefWidth="369.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></ListView>
+      <Button fx:id="btnMainMenu" layoutX="349.0" layoutY="732.0" mnemonicParsing="false" onAction="#handleButtonMainMenu" text="Main Menu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <GridPane fx:id="gridPane" hgap="2.0" layoutX="488.0" layoutY="162.0" pickOnBounds="false" prefHeight="154.0" prefWidth="294.0" vgap="2.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+      <AnchorPane layoutX="469.0" layoutY="316.0" prefHeight="385.0" prefWidth="334.0">
+         <children>
+            <Label alignment="CENTER" layoutX="83.0" layoutY="44.0" prefHeight="32.0" prefWidth="168.0" text="High Score">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="gpHighScore" hgap="10.0" layoutX="28.0" layoutY="76.0" prefHeight="295.0" prefWidth="279.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="206.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="74.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+</children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.almasb.battleship.BattleshipMain">
+   <children>
+      <Button fx:id="btnNewGame" layoutX="243.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="148.0" styleClass="btn" text="New Game" textAlignment="CENTER" />
+      <Button fx:id="btnExit" layoutX="271.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="91.0" styleClass="btn" text="Quit" textAlignment="CENTER" />
+      <Button fx:id="btnSound" layoutX="232.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="169.0" styleClass="btn" text="Sound On/Off" textAlignment="CENTER" />
+      <Button fx:id="btnScore" layoutX="246.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="142.0" styleClass="btn" text="High score" textAlignment="CENTER" />
+      <Button fx:id="btnResume" layoutX="260.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="0.0" prefWidth="103.0" styleClass="btn" text="Resume" textAlignment="CENTER" visible="hide" />
+   </children>
+</AnchorPane>
